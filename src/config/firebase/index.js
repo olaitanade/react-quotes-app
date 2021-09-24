@@ -33,15 +33,3 @@ export const analytics = getAnalytics(app);
 export const defaultStorage = getStorage(app);
 export const defaultFirestore = getFirestore(app);
 export const auth = getAuth(app);
-
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
